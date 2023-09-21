@@ -1,0 +1,175 @@
+body::-webkit-scrollbar {
+  width: 0.3cm;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-top-right-radius: 0.2cm;
+  border-bottom-right-radius: 0.2cm;
+  border-right: solid aqua 1px;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #82009f 0%, #5d34af 50%, #00ceab 100%);
+  width: calc(100% - 0.3cm);
+  height: 100%;
+}
+
+.dropbtn {
+  background-color: #0077ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #0077ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #00eeff;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.5;
+  text-align: center;
+}
+.input {
+  position: absolute;
+  width: 4cm;
+  top: 40%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 17, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: none;
+  outline: none;
+  height: 1cm;
+  letter-spacing: 0.05cm;
+  font-size: larger;
+  font-weight: bold;
+}
+.cnvbtn {
+  text-align: center;
+  width: 2.7cm;
+  height: 1.2cm;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  border-radius: 4px;
+  background-color: #11133a;
+  border: none;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 72%;
+  left: 29%;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.cnvbtn:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.cnvbtn:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.cnvbtn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+/*******************************************************  LINES  ****************************************************/
+
+.l1 {
+  color: rgb(102, 102, 102);
+  position: absolute;
+  top: 90%;
+  width: 99.89%;
+  left: 0;
+}
+
+/*******************************************************  CONTACT INFO  ****************************************************/
+
+.email {
+  position: absolute;
+  top: 92%;
+  color: rgb(126, 126, 126);
+  font-family: arial;
+  font-size: 20px;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.title {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .title {
+    flex-direction: column;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}

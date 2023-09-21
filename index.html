@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute Zero</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="fav.jpg" />
+  </head>
+  <body>
+    <div class="title">
+      <h1 style="font-family: sans-serif">Heat Converter</h1>
+      <h1 style="font-family: sans-serif">Absolute Zero</h1>
+    </div>
+    <div class="main">
+      <input
+        type="text"
+        id="input"
+        class="input"
+        maxlength="9"
+        placeholder="type here"
+      />
+      <table style="position: absolute; left: 44.5%; top: 50%">
+        <td>
+          <p
+            style="
+              display: inline;
+              color: white;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: large;
+            "
+          >
+            From
+          </p>
+          <div class="dropdown">
+            <button class="dropbtn" id="dropbtn1">↓</button>
+            <div class="dropdown-content">
+              <a id="c1">Celsius</a>
+              <a id="f1">Fahrenheit</a>
+              <a id="k1">Kelvin</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p
+            style="
+              display: inline;
+              color: white;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: large;
+            "
+          >
+            To
+          </p>
+          <div class="dropdown">
+            <button class="dropbtn" id="dropbtn2">↓</button>
+            <div class="dropdown-content">
+              <a id="c2">Celsius</a>
+              <a id="f2">Fahrenheit</a>
+              <a id="k2">Kelvin</a>
+            </div>
+          </div>
+        </td>
+      </table>
+
+      <button class="cnvbtn" id="cnvbtn">Convert</button>
+      <input
+        type="text"
+        id="output"
+        readonly
+        style="width: 4cm; top: 70%"
+        class="input"
+        placeholder="resault"
+        maxlength="9"
+      />
+
+      <hr class="l1" />
+      <hr class="l1" style="top: 91%" />
+
+      <p class="email">
+        <a
+          href="https://khaledhm.tn"
+          style="
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(214, 214, 214);
+          "
+          target="_blank"
+          >KhaledHm.tn</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
